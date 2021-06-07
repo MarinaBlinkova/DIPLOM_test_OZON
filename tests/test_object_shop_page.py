@@ -10,3 +10,4 @@ def test_shops(driver):
     shop_page = ShopPage(driver)
     assert shop_page.get_shops()[1].is_displayed()
     time.sleep(5)
+

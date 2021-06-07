@@ -24,3 +24,28 @@ def test_get_Ozon_Card(driver):
     ozon_page = OzonPage(driver)
     ozon_page.visit()
     assert ozon_page.get_Ozon_Card()[1].is_displayed()
+
+def test_get_LIVE(driver):
+    ozon_page = OzonPage(driver)
+    ozon_page.visit()
+    assert ozon_page.get_LIVE().is_displayed()
+
+def test_get_sale(driver):
+    ozon_page = OzonPage(driver)
+    ozon_page.visit()
+    assert ozon_page.get_sale().is_displayed()
+
+def test_get_Ozon_Travel(driver):
+    ozon_page = OzonPage(driver)
+    ozon_page.visit()
+    assert ozon_page.get_Ozon_Travel()[1].is_displayed()
+
+def test_get_Brands(driver):
+    ozon_page = OzonPage(driver)
+    ozon_page.visit()
+    assert ozon_page.get_Brands().is_displayed()
+
+def test_get_Certificates(driver):
+    ozon_page = OzonPage(driver)
+    ozon_page.visit()
+    assert ozon_page.get_Certificates().is_displayed()
